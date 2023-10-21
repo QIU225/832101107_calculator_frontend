@@ -1,0 +1,55 @@
+.info {
+  min-height: 300rpx;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  justify-content: flex-end;
+  background-color: rgb(255, 248, 248);
+  font-size: 100rpx;
+}
+
+.buttons > view {
+  display: flex;
+  font-size: 45rpx;
+  background-color: rgb(255, 247, 247);
+}
+
+/* 顶部两行按钮的样式 */
+.buttons > view:nth-child(1),
+.buttons > view:nth-child(2) {
+  display: flex;
+  font-size: 45rpx;
+  background-color: rgb(255, 247, 247);
+  justify-content: center; 
+}
+
+.buttons > view:nth-child(1) > view,
+.buttons > view:nth-child(2) > view {
+  flex: 1;
+  text-align: center;
+  width: 300rpx; 
+  height: 100rpx;
+  line-height: 100rpx; 
+  border: none;
+  background-color: rgb(245, 227, 227);
+  box-shadow: 5px 5px 10px rgba(83, 5, 5, 0.2);
+  transition: background-color 0.3s, transform 0.2s;
+  margin: 12px;
+  border-radius: 20%;
+}
+
+/* 其余按钮的样式 */
+.buttons > view:not(:nth-child(1)):not(:nth-child(2)) > view {
+  flex: 1;
+  text-align: center;
+  width: 80rpx;
+  height: 120rpx;
+  line-height: 120rpx; 
+  border: none;
+  background-color: rgb(247, 207, 207);
+  box-shadow: 5px 5px 10px rgba(83, 5, 5, 0.2);
+  transition: background-color 0.3s, transform 0.2s;
+  margin: 10px;
+  border-radius: 75%; 
+}
+
